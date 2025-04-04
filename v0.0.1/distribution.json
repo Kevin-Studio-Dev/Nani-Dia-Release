@@ -43,7 +43,23 @@
                 "url": "https://maven.fabricmc.net/net/fabricmc/fabric-loader/0.15.6/fabric-loader-0.15.6.json"
               }
             }
-          ]
+          ],
+          "arguments": {
+            "jvm": [
+              "-Dfabric.gameDir=${game_directory}",
+              "-Dfabric.loader.gameId=minecraft",
+              "-Dfabric.loader.json=${version_name}",
+              "-Dfabric.loader.debug=false",
+              "-Dfabric.loader.language=ko_kr",
+              "-Xmx2G",
+              "-XX:+UnlockExperimentalVMOptions",
+              "-XX:+UseG1GC",
+              "-XX:G1NewSizePercent=20",
+              "-XX:G1ReservePercent=20",
+              "-XX:MaxGCPauseMillis=50",
+              "-XX:G1HeapRegionSize=32M"
+            ]
+          }
         },
         {
           "id": ".DS_Store",
