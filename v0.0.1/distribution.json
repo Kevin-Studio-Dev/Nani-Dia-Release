@@ -25,13 +25,25 @@
         {
           "id": "net.fabricmc:fabric-loader:0.15.6",
           "name": "Fabric Loader",
-          "type": "FabricLoader",
+          "type": "Fabric",
           "required": true,
           "artifact": {
             "size": 404897,
             "MD5": "9490c7458254ce7124c4bbcf9ef9110c",
             "url": "https://maven.fabricmc.net/net/fabricmc/fabric-loader/0.15.6/fabric-loader-0.15.6.jar"
-          }
+          },
+          "subModules": [
+            {
+              "id": "fabric-version-manifest",
+              "name": "Fabric Version Manifest",
+              "type": "VersionManifest",
+              "artifact": {
+                "size": 14601,
+                "MD5": "02c58f7573b74033c13a1d4d2f6af919",
+                "url": "https://maven.fabricmc.net/net/fabricmc/fabric-loader/0.15.6/fabric-loader-0.15.6.json"
+              }
+            }
+          ]
         },
         {
           "id": ".DS_Store",
