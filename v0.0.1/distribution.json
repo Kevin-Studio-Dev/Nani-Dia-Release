@@ -499,16 +499,6 @@
           ]
         },
         {
-          "id": "net.optifine:optifine:1.20.4_HD_U_I7@jar",
-          "name": "OptiFine",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 7232045,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-1.20.4/forgemods/required/OptiFine_1.20.4_HD_U_I7.jar",
-            "MD5": "35bb67f2fa6e6e0bcbff13c23724deee"
-          }
-        },
-        {
           "id": "fml.toml",
           "name": "fml.toml",
           "type": "File",
