@@ -23,6 +23,28 @@
       "autoconnect": false,
       "modules": [
         {
+          "id": "net.minecraft:minecraft:1.20.4",
+          "name": "Minecraft",
+          "type": "Game",
+          "artifact": {
+            "size": 22565945,
+            "MD5": "48f2c9e75b94d561ca3245e751b0e404",
+            "url": "https://launcher.mojang.com/v1/objects/8dd1a28015f52fb4c1c69995936bc708070faf42/client.jar"
+          },
+          "subModules": [
+            {
+              "id": "1.20.4-version",
+              "name": "1.20.4 Version JSON",
+              "type": "VersionManifest",
+              "artifact": {
+                "size": 2354,
+                "MD5": "ea86bcf9b59f8b0e62e9e9e732635727",
+                "url": "https://launchermeta.mojang.com/v1/packages/5f05f18c1a064f441e61ff4e9c39270cc6f3f522/1.20.4.json"
+              }
+            }
+          ]
+        },
+        {
           "id": "net.fabricmc:fabric-loader:0.15.6",
           "name": "Fabric Loader",
           "type": "Fabric",
@@ -108,7 +130,28 @@
               "-XX:G1NewSizePercent=20",
               "-XX:G1ReservePercent=20",
               "-XX:MaxGCPauseMillis=50",
-              "-XX:G1HeapRegionSize=32M"
+              "-XX:G1HeapRegionSize=32M",
+              "-Dfabric.additionalClasspath=../../common/libraries/org/ow2/asm/asm/9.5/asm-9.5.jar;../../common/libraries/org/ow2/asm/asm-commons/9.5/asm-commons-9.5.jar;../../common/libraries/org/ow2/asm/asm-tree/9.5/asm-tree-9.5.jar;../../common/libraries/org/ow2/asm/asm-util/9.5/asm-util-9.5.jar;../../common/libraries/org/ow2/asm/asm-analysis/9.5/asm-analysis-9.5.jar"
+            ],
+            "game": [
+              "--username",
+              "${auth_player_name}",
+              "--version",
+              "${version_name}",
+              "--gameDir",
+              "${game_directory}",
+              "--assetsDir",
+              "${assets_root}",
+              "--assetIndex",
+              "${assets_index_name}",
+              "--uuid",
+              "${auth_uuid}",
+              "--accessToken",
+              "${auth_access_token}",
+              "--userType",
+              "${user_type}",
+              "--versionType",
+              "${version_type}"
             ]
           }
         },
