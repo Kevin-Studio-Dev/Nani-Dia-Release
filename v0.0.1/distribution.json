@@ -499,6 +499,16 @@
           ]
         },
         {
+          "id": "net.optifine:optifine:1.20.4_HD_U_I7@jar",
+          "name": "OptiFine",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 7232045,
+            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-1.20.4/forgemods/required/OptiFine_1.20.4_HD_U_I7.jar",
+            "MD5": "35bb67f2fa6e6e0bcbff13c23724deee"
+          }
+        },
+        {
           "id": "fml.toml",
           "name": "fml.toml",
           "type": "File",
@@ -518,17 +528,6 @@
             "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-1.20.4/files/config/forge-client.toml",
             "MD5": "dbf4f7281b3743db0b5f304758c9bd9d",
             "path": "config/forge-client.toml"
-          }
-        },
-        {
-          "id": "OptiFine_1.20.4_HD_U_I7.jar",
-          "name": "OptiFine_1.20.4_HD_U_I7.jar",
-          "type": "File",
-          "artifact": {
-            "size": 7232045,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-1.20.4/files/mods/OptiFine_1.20.4_HD_U_I7.jar",
-            "MD5": "35bb67f2fa6e6e0bcbff13c23724deee",
-            "path": "mods/OptiFine_1.20.4_HD_U_I7.jar"
           }
         },
         {
