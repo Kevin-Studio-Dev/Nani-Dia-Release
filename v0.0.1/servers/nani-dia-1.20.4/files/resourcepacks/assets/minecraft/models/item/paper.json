@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/diamond_sword"
+  },
+  "overrides": [
+    {"predicate": {"custom_model_data": 1},"model": "item/inven"},
+    {"predicate": {"custom_model_data": 2},"model": "item/back"},
+    {"predicate": {"custom_model_data": 3},"model": "item/back"},
+    {"predicate": {"custom_model_data": 4},"model": "item/0"},
+    {"predicate": {"custom_model_data": 5},"model": "item/man"},
+    {"predicate": {"custom_model_data": 6},"model": "item/ooo"},
+    {"predicate": {"custom_model_data": 7},"model": "item/mak"},
+    {"predicate": {"custom_model_data": 8},"model": "item/mak1"},
+    {"predicate": {"custom_model_data": 9},"model": "item/g1"},
+    {"predicate": {"custom_model_data": 10},"model": "item/g2"},
+    {"predicate": {"custom_model_data": 11},"model": "item/g3"},
+    {"predicate": {"custom_model_data": 12},"model": "item/g4"},
+    {"predicate": {"custom_model_data": 13},"model": "item/g5"},
+    {"predicate": {"custom_model_data": 14},"model": "item/ring"},
+    {"predicate": {"custom_model_data": 15},"model": "item/gi"},
+    {"predicate": {"custom_model_data": 16},"model": "item/z1"},
+    {"predicate": {"custom_model_data": 17},"model": "item/bba"},
+    {"predicate": {"custom_model_data": 19},"model": "item/z2"},
+    {"predicate": {"custom_model_data": 20},"model": "item/z3"},
+    {"predicate": {"custom_model_data": 21},"model": "item/z4"},
+    {"predicate": {"custom_model_data": 22},"model": "item/z5"},
+    {"predicate": {"custom_model_data": 1000},"model": "item/head_blue"},
+    {"predicate": {"custom_model_data": 1001},"model": "item/head_red"},
+    {"predicate": {"custom_model_data": 1002},"model": "item/ds2"},
+    {"predicate": {"custom_model_data": 1003},"model": "item/ds1"}
+
+  ]
+}
