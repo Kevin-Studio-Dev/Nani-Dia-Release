@@ -23,6 +23,17 @@
       "autoconnect": false,
       "modules": [
         {
+          "id": "net.fabricmc:fabric-loader:0.15.6",
+          "name": "Fabric Loader",
+          "type": "FabricLoader",
+          "required": true,
+          "artifact": {
+            "size": 404897,
+            "MD5": "9490c7458254ce7124c4bbcf9ef9110c",
+            "url": "https://maven.fabricmc.net/net/fabricmc/fabric-loader/0.15.6/fabric-loader-0.15.6.jar"
+          }
+        },
+        {
           "id": ".DS_Store",
           "name": ".DS_Store",
           "type": "File",
