@@ -499,6 +499,16 @@
           ]
         },
         {
+          "id": "generated.library:OptiFine_1.20.4_HD_U_I7:0.0.0@jar",
+          "name": "OptiFine_1.20.4_HD_U_I7",
+          "type": "Library",
+          "artifact": {
+            "size": 7232045,
+            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-1.20.4/libraries/OptiFine_1.20.4_HD_U_I7.jar",
+            "MD5": "35bb67f2fa6e6e0bcbff13c23724deee"
+          }
+        },
+        {
           "id": "fml.toml",
           "name": "fml.toml",
           "type": "File",
