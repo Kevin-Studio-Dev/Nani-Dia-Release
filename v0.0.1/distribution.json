@@ -1,543 +1,534 @@
 {
   "version": "1.0.0",
+  "rss": "<LINK TO RSS FEED>",
   "discord": {
-    "shortId": "<FILL IN OR REMOVE DISCORD OBJECT>",
-    "largeImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
-    "largeImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
+    "clientId": "<FILL IN OR REMOVE DISCORD OBJECT>",
+    "smallImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
+    "smallImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
   },
   "servers": [
     {
-      "id": "nani-dia-1.20.4",
-      "name": "nani-dia (Minecraft 1.20.4)",
-      "description": "nani-dia Running Minecraft 1.20.4",
+      "id": "nani-1.20.4",
+      "name": "nani (Minecraft 1.20.4)",
+      "description": "nani Running Minecraft 1.20.4 (Forge v49.2.0)",
       "icon": null,
-      "version": "0.0.1",
-      "address": "mc.hypixel.net:25565",
+      "version": "1.0.0",
+      "address": "localhost:25565",
       "minecraftVersion": "1.20.4",
       "discord": {
         "shortId": "<FILL IN OR REMOVE DISCORD OBJECT>",
         "largeImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
         "largeImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
       },
-      "mainServer": true,
+      "mainServer": false,
       "autoconnect": false,
       "modules": [
         {
-          "id": "net.minecraft:minecraft:1.20.4",
-          "name": "Minecraft",
-          "type": "Game",
+          "id": "net.minecraftforge:forge:1.20.4-49.2.0:universal",
+          "name": "Minecraft Forge (universal jar)",
+          "type": "ForgeHosted",
+          "classpath": true,
           "artifact": {
-            "size": 22565945,
-            "MD5": "48f2c9e75b94d561ca3245e751b0e404",
-            "url": "https://launcher.mojang.com/v1/objects/8dd1a28015f52fb4c1c69995936bc708070faf42/client.jar"
+            "size": 2487660,
+            "MD5": "be509d1567f52023e8454788a31de929",
+            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/minecraftforge/forge/1.20.4-49.2.0/forge-1.20.4-49.2.0-universal.jar"
           },
           "subModules": [
             {
-              "id": "1.20.4-version",
-              "name": "1.20.4 Version JSON",
+              "id": "1.20.4-49.2.0",
+              "name": "Minecraft Forge (version.json)",
               "type": "VersionManifest",
               "artifact": {
-                "size": 2354,
-                "MD5": "ea86bcf9b59f8b0e62e9e9e732635727",
-                "url": "https://launchermeta.mojang.com/v1/packages/5f05f18c1a064f441e61ff4e9c39270cc6f3f522/1.20.4.json"
+                "size": 19901,
+                "MD5": "6d717435bdaee5a0602faa28248d1e8a",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/versions/1.20.4-forge-49.2.0/1.20.4-forge-49.2.0.json"
+              }
+            },
+            {
+              "id": "net.minecraftforge:forge:1.20.4-49.2.0:client",
+              "name": "Minecraft Forge (client jar)",
+              "type": "Library",
+              "classpath": true,
+              "artifact": {
+                "size": 26348916,
+                "MD5": "2c6d01ba3bfb26b4e5c2438c062db109",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/minecraftforge/forge/1.20.4-49.2.0/forge-1.20.4-49.2.0-client.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraftforge:forge:1.20.4-49.2.0:shim",
+              "name": "Minecraft Forge (client shim)",
+              "type": "Library",
+              "classpath": false,
+              "artifact": {
+                "size": 10602,
+                "MD5": "02784f7cea09fb085731c658c5483d29",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/minecraftforge/forge/1.20.4-49.2.0/forge-1.20.4-49.2.0-shim.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraftforge:fmlcore:1.20.4-49.2.0",
+              "name": "Minecraft Forge (fmlcore)",
+              "type": "Library",
+              "classpath": true,
+              "artifact": {
+                "size": 118539,
+                "MD5": "e11ee3bce35da2b812dd4ab62957fe34",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/minecraftforge/fmlcore/1.20.4-49.2.0/fmlcore-1.20.4-49.2.0.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraftforge:javafmllanguage:1.20.4-49.2.0",
+              "name": "Minecraft Forge (javafmllanguage)",
+              "type": "Library",
+              "classpath": true,
+              "artifact": {
+                "size": 17028,
+                "MD5": "fb40b9d26f4e71b390faf9a0378b202e",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/minecraftforge/javafmllanguage/1.20.4-49.2.0/javafmllanguage-1.20.4-49.2.0.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraftforge:mclanguage:1.20.4-49.2.0",
+              "name": "Minecraft Forge (mclanguage)",
+              "type": "Library",
+              "classpath": true,
+              "artifact": {
+                "size": 4924,
+                "MD5": "6319fcde84e88de5a34a4b80a0a7f2b4",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/minecraftforge/mclanguage/1.20.4-49.2.0/mclanguage-1.20.4-49.2.0.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraftforge:lowcodelanguage:1.20.4-49.2.0",
+              "name": "Minecraft Forge (lowcodelanguage)",
+              "type": "Library",
+              "classpath": true,
+              "artifact": {
+                "size": 7327,
+                "MD5": "2d4b2ccca390239b0676094320cf9ac5",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/minecraftforge/lowcodelanguage/1.20.4-49.2.0/lowcodelanguage-1.20.4-49.2.0.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraftforge:forge:1.20.4-49.2.0:universal",
+              "name": "Minecraft Forge (forge)",
+              "type": "Library",
+              "artifact": {
+                "size": 2487660,
+                "MD5": "be509d1567f52023e8454788a31de929",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/minecraftforge/forge/1.20.4-49.2.0/forge-1.20.4-49.2.0-universal.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:JarJarFileSystems:0.3.26",
+              "name": "Minecraft Forge (JarJarFileSystems)",
+              "type": "Library",
+              "artifact": {
+                "size": 33588,
+                "MD5": "8352942e72eeb89fcbac32a48f63051b",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/minecraftforge/JarJarFileSystems/0.3.26/JarJarFileSystems-0.3.26.jar"
+              }
+            },
+            {
+              "id": "com.google.guava:guava:32.1.2-jre",
+              "name": "Minecraft Forge (guava)",
+              "type": "Library",
+              "artifact": {
+                "size": 3041591,
+                "MD5": "5fe031b3b35ed56182478811a931d617",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar"
+              }
+            },
+            {
+              "id": "com.google.guava:failureaccess:1.0.1",
+              "name": "Minecraft Forge (failureaccess)",
+              "type": "Library",
+              "artifact": {
+                "size": 4617,
+                "MD5": "091883993ef5bfa91da01dcc8fc52236",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:securemodules:2.2.21",
+              "name": "Minecraft Forge (securemodules)",
+              "type": "Library",
+              "artifact": {
+                "size": 99261,
+                "MD5": "5d397ffe3f80e51f97396f4c84b14da7",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/minecraftforge/securemodules/2.2.21/securemodules-2.2.21.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:unsafe:0.9.2",
+              "name": "Minecraft Forge (unsafe)",
+              "type": "Library",
+              "artifact": {
+                "size": 7768,
+                "MD5": "a4b1f17fbeea6b548c3530451e45c5c6",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/minecraftforge/unsafe/0.9.2/unsafe-0.9.2.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm:9.7.1",
+              "name": "Minecraft Forge (asm)",
+              "type": "Library",
+              "artifact": {
+                "size": 126093,
+                "MD5": "e2cdd32d198ad31427d298eee9d39d8d",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-tree:9.7.1",
+              "name": "Minecraft Forge (asm-tree)",
+              "type": "Library",
+              "artifact": {
+                "size": 51939,
+                "MD5": "e85029f613b6469989cc7cf53fe06b74",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/org/ow2/asm/asm-tree/9.7.1/asm-tree-9.7.1.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-util:9.7.1",
+              "name": "Minecraft Forge (asm-util)",
+              "type": "Library",
+              "artifact": {
+                "size": 94519,
+                "MD5": "36d373a9cd6cad9b35db9f984c6b4bbb",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/org/ow2/asm/asm-util/9.7.1/asm-util-9.7.1.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-commons:9.7.1",
+              "name": "Minecraft Forge (asm-commons)",
+              "type": "Library",
+              "artifact": {
+                "size": 73459,
+                "MD5": "8344aea3c8b7d707e9d35a62710e77c9",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/org/ow2/asm/asm-commons/9.7.1/asm-commons-9.7.1.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-analysis:9.7.1",
+              "name": "Minecraft Forge (asm-analysis)",
+              "type": "Library",
+              "artifact": {
+                "size": 35126,
+                "MD5": "4cd9e7178dfb85371bba3077e40cd514",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/org/ow2/asm/asm-analysis/9.7.1/asm-analysis-9.7.1.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:bootstrap:2.1.8",
+              "name": "Minecraft Forge (bootstrap)",
+              "type": "Library",
+              "artifact": {
+                "size": 11124,
+                "MD5": "5e88694e0e5f6656830eee83d462550e",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/minecraftforge/bootstrap/2.1.8/bootstrap-2.1.8.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:bootstrap-api:2.1.8",
+              "name": "Minecraft Forge (bootstrap-api)",
+              "type": "Library",
+              "artifact": {
+                "size": 2059,
+                "MD5": "80e1ccc33e0ac0a995a352ec2977d131",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/minecraftforge/bootstrap-api/2.1.8/bootstrap-api-2.1.8.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:accesstransformers:8.1.1",
+              "name": "Minecraft Forge (accesstransformers)",
+              "type": "Library",
+              "artifact": {
+                "size": 76622,
+                "MD5": "c6a569349fab20014d69b2bc5f147abb",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/minecraftforge/accesstransformers/8.1.1/accesstransformers-8.1.1.jar"
+              }
+            },
+            {
+              "id": "org.antlr:antlr4-runtime:4.9.1",
+              "name": "Minecraft Forge (antlr4-runtime)",
+              "type": "Library",
+              "artifact": {
+                "size": 337868,
+                "MD5": "0dcc4b860d5d8d2852ab94d58c56ca2d",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/org/antlr/antlr4-runtime/4.9.1/antlr4-runtime-4.9.1.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:eventbus:6.2.27",
+              "name": "Minecraft Forge (eventbus)",
+              "type": "Library",
+              "artifact": {
+                "size": 58819,
+                "MD5": "75bc70f98b84a9778165e83e39f26d24",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/minecraftforge/eventbus/6.2.27/eventbus-6.2.27.jar"
+              }
+            },
+            {
+              "id": "net.jodah:typetools:0.6.3",
+              "name": "Minecraft Forge (typetools)",
+              "type": "Library",
+              "artifact": {
+                "size": 18281,
+                "MD5": "d4a375bf382f726cf1a650ccb38a736c",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/jodah/typetools/0.6.3/typetools-0.6.3.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:forgespi:7.1.3",
+              "name": "Minecraft Forge (forgespi)",
+              "type": "Library",
+              "artifact": {
+                "size": 30933,
+                "MD5": "7035ee57ae4ae4e02acc7fe8b2a6c35e",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/minecraftforge/forgespi/7.1.3/forgespi-7.1.3.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:coremods:5.2.6",
+              "name": "Minecraft Forge (coremods)",
+              "type": "Library",
+              "artifact": {
+                "size": 31941,
+                "MD5": "998accaddc7f9a050e982a0c0a90ac4e",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/minecraftforge/coremods/5.2.6/coremods-5.2.6.jar"
+              }
+            },
+            {
+              "id": "org.openjdk.nashorn:nashorn-core:15.4",
+              "name": "Minecraft Forge (nashorn-core)",
+              "type": "Library",
+              "artifact": {
+                "size": 2167292,
+                "MD5": "a9b3360e6a486cf62c1952c7816b7d97",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/org/openjdk/nashorn/nashorn-core/15.4/nashorn-core-15.4.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:modlauncher:10.1.2",
+              "name": "Minecraft Forge (modlauncher)",
+              "type": "Library",
+              "artifact": {
+                "size": 124508,
+                "MD5": "0043ac5b853706b0faa3a734e8f5cba2",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/minecraftforge/modlauncher/10.1.2/modlauncher-10.1.2.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:mergetool-api:1.0",
+              "name": "Minecraft Forge (mergetool-api)",
+              "type": "Library",
+              "artifact": {
+                "size": 2624,
+                "MD5": "848efa1631b460b715de574b2beaba8e",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/minecraftforge/mergetool-api/1.0/mergetool-api-1.0.jar"
+              }
+            },
+            {
+              "id": "com.electronwill.night-config:toml:3.6.7",
+              "name": "Minecraft Forge (toml)",
+              "type": "Library",
+              "artifact": {
+                "size": 33875,
+                "MD5": "ade260a0c6027deb06f6156da2cb143f",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/com/electronwill/night-config/toml/3.6.7/toml-3.6.7.jar"
+              }
+            },
+            {
+              "id": "com.electronwill.night-config:core:3.6.7",
+              "name": "Minecraft Forge (core)",
+              "type": "Library",
+              "artifact": {
+                "size": 206812,
+                "MD5": "50188d9cbc20dbc49315bf83c28cd38c",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/com/electronwill/night-config/core/3.6.7/core-3.6.7.jar"
+              }
+            },
+            {
+              "id": "org.apache.maven:maven-artifact:3.8.8",
+              "name": "Minecraft Forge (maven-artifact)",
+              "type": "Library",
+              "artifact": {
+                "size": 58097,
+                "MD5": "62c96f80b30e8a0c3e706bc0a27b4384",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/org/apache/maven/maven-artifact/3.8.8/maven-artifact-3.8.8.jar"
+              }
+            },
+            {
+              "id": "net.minecrell:terminalconsoleappender:1.2.0",
+              "name": "Minecraft Forge (terminalconsoleappender)",
+              "type": "Library",
+              "artifact": {
+                "size": 15977,
+                "MD5": "679363fa893293791e55a21f81342f87",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/minecrell/terminalconsoleappender/1.2.0/terminalconsoleappender-1.2.0.jar"
+              }
+            },
+            {
+              "id": "org.jline:jline-reader:3.25.1",
+              "name": "Minecraft Forge (jline-reader)",
+              "type": "Library",
+              "artifact": {
+                "size": 183668,
+                "MD5": "e0761241f55f4f1a46999f57c7a419a1",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/org/jline/jline-reader/3.25.1/jline-reader-3.25.1.jar"
+              }
+            },
+            {
+              "id": "org.jline:jline-terminal:3.25.1",
+              "name": "Minecraft Forge (jline-terminal)",
+              "type": "Library",
+              "artifact": {
+                "size": 261895,
+                "MD5": "6e319770f036ccab1928b8de68a62ca5",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/org/jline/jline-terminal/3.25.1/jline-terminal-3.25.1.jar"
+              }
+            },
+            {
+              "id": "org.jline:jline-terminal-jna:3.25.1",
+              "name": "Minecraft Forge (jline-terminal-jna)",
+              "type": "Library",
+              "artifact": {
+                "size": 73759,
+                "MD5": "a9b17e3a4bc39309cbc1243e81400615",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/org/jline/jline-terminal-jna/3.25.1/jline-terminal-jna-3.25.1.jar"
+              }
+            },
+            {
+              "id": "org.spongepowered:mixin:0.8.5",
+              "name": "Minecraft Forge (mixin)",
+              "type": "Library",
+              "artifact": {
+                "size": 1089277,
+                "MD5": "19b3a2ae9e445a6e626fd7d1648cfcb8",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:JarJarSelector:0.3.26",
+              "name": "Minecraft Forge (JarJarSelector)",
+              "type": "Library",
+              "artifact": {
+                "size": 17346,
+                "MD5": "0bbcf01b4a6d9d8edc3ea6dbf82230d4",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/minecraftforge/JarJarSelector/0.3.26/JarJarSelector-0.3.26.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:JarJarMetadata:0.3.26",
+              "name": "Minecraft Forge (JarJarMetadata)",
+              "type": "Library",
+              "artifact": {
+                "size": 15863,
+                "MD5": "3951751f2e680c0fd43742b33fbe4131",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/minecraftforge/JarJarMetadata/0.3.26/JarJarMetadata-0.3.26.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:fmlcore:1.20.4-49.2.0",
+              "name": "Minecraft Forge (fmlcore)",
+              "type": "Library",
+              "artifact": {
+                "size": 118539,
+                "MD5": "e11ee3bce35da2b812dd4ab62957fe34",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/minecraftforge/fmlcore/1.20.4-49.2.0/fmlcore-1.20.4-49.2.0.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:fmlloader:1.20.4-49.2.0",
+              "name": "Minecraft Forge (fmlloader)",
+              "type": "Library",
+              "artifact": {
+                "size": 241540,
+                "MD5": "0aff04aef883cf27f6e62a276687272b",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/minecraftforge/fmlloader/1.20.4-49.2.0/fmlloader-1.20.4-49.2.0.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:fmlearlydisplay:1.20.4-49.2.0",
+              "name": "Minecraft Forge (fmlearlydisplay)",
+              "type": "Library",
+              "artifact": {
+                "size": 170444,
+                "MD5": "ea98f3949ce3900432bfc70336d17bd2",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/minecraftforge/fmlearlydisplay/1.20.4-49.2.0/fmlearlydisplay-1.20.4-49.2.0.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:javafmllanguage:1.20.4-49.2.0",
+              "name": "Minecraft Forge (javafmllanguage)",
+              "type": "Library",
+              "artifact": {
+                "size": 17028,
+                "MD5": "fb40b9d26f4e71b390faf9a0378b202e",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/minecraftforge/javafmllanguage/1.20.4-49.2.0/javafmllanguage-1.20.4-49.2.0.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:lowcodelanguage:1.20.4-49.2.0",
+              "name": "Minecraft Forge (lowcodelanguage)",
+              "type": "Library",
+              "artifact": {
+                "size": 7327,
+                "MD5": "2d4b2ccca390239b0676094320cf9ac5",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/minecraftforge/lowcodelanguage/1.20.4-49.2.0/lowcodelanguage-1.20.4-49.2.0.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:mclanguage:1.20.4-49.2.0",
+              "name": "Minecraft Forge (mclanguage)",
+              "type": "Library",
+              "artifact": {
+                "size": 4924,
+                "MD5": "6319fcde84e88de5a34a4b80a0a7f2b4",
+                "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/repo/lib/net/minecraftforge/mclanguage/1.20.4-49.2.0/mclanguage-1.20.4-49.2.0.jar"
               }
             }
           ]
         },
         {
-          "id": "net.fabricmc:fabric-loader:0.15.6",
-          "name": "Fabric Loader",
-          "type": "Fabric",
-          "mainClass": "net.fabricmc.loader.impl.launch.knot.KnotClient",
-          "required": true,
-          "artifact": {
-            "size": 404897,
-            "MD5": "9490c7458254ce7124c4bbcf9ef9110c",
-            "url": "https://maven.fabricmc.net/net/fabricmc/fabric-loader/0.15.6/fabric-loader-0.15.6.jar"
-          },
-          "subModules": [
-            {
-              "id": "fabric-version-manifest",
-              "name": "Fabric Version Manifest",
-              "type": "VersionManifest",
-              "artifact": {
-                "size": 14601,
-                "MD5": "02c58f7573b74033c13a1d4d2f6af919",
-                "url": "https://maven.fabricmc.net/net/fabricmc/fabric-loader/0.15.6/fabric-loader-0.15.6.json"
-              }
-            },
-            {
-              "id": "org.ow2.asm:asm:9.5",
-              "name": "ASM Core",
-              "type": "Library",
-              "artifact": {
-                "size": 121863,
-                "MD5": "afb0c20a87456cbc9c6345fc7d073a47",
-                "url": "https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.5/asm-9.5.jar"
-              }
-            },
-            {
-              "id": "org.ow2.asm:asm-commons:9.5",
-              "name": "ASM Commons",
-              "type": "Library",
-              "artifact": {
-                "size": 72194,
-                "MD5": "2bc1d3565741886f0ba4b769ee7fb5ef",
-                "url": "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.5/asm-commons-9.5.jar"
-              }
-            },
-            {
-              "id": "org.ow2.asm:asm-tree:9.5",
-              "name": "ASM Tree",
-              "type": "Library",
-              "artifact": {
-                "size": 52858,
-                "MD5": "84dc3612d7a7375a3a6b6a1c58ef9577",
-                "url": "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.5/asm-tree-9.5.jar"
-              }
-            },
-            {
-              "id": "org.ow2.asm:asm-util:9.5",
-              "name": "ASM Util",
-              "type": "Library",
-              "artifact": {
-                "size": 86286,
-                "MD5": "2c03a0a595a680ec63382c54d82a3307",
-                "url": "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-util/9.5/asm-util-9.5.jar"
-              }
-            },
-            {
-              "id": "org.ow2.asm:asm-analysis:9.5",
-              "name": "ASM Analysis",
-              "type": "Library",
-              "artifact": {
-                "size": 34521,
-                "MD5": "df4f4ce85914aa5c4b54de5d9e67a5b7",
-                "url": "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/9.5/asm-analysis-9.5.jar"
-              }
-            }
-          ],
-          "arguments": {
-            "jvm": [
-              "-Dfabric.gameDir=${game_directory}",
-              "-Dfabric.loader.gameId=minecraft",
-              "-Dfabric.loader.json=${version_name}",
-              "-Dfabric.loader.debug=false",
-              "-Dfabric.loader.language=ko_kr",
-              "-Xmx2G",
-              "-XX:+UnlockExperimentalVMOptions",
-              "-XX:+UseG1GC",
-              "-XX:G1NewSizePercent=20",
-              "-XX:G1ReservePercent=20",
-              "-XX:MaxGCPauseMillis=50",
-              "-XX:G1HeapRegionSize=32M",
-              "-Dfabric.additionalClasspath=../../common/libraries/org/ow2/asm/asm/9.5/asm-9.5.jar;../../common/libraries/org/ow2/asm/asm-commons/9.5/asm-commons-9.5.jar;../../common/libraries/org/ow2/asm/asm-tree/9.5/asm-tree-9.5.jar;../../common/libraries/org/ow2/asm/asm-util/9.5/asm-util-9.5.jar;../../common/libraries/org/ow2/asm/asm-analysis/9.5/asm-analysis-9.5.jar"
-            ],
-            "game": [
-              "--username",
-              "${auth_player_name}",
-              "--version",
-              "${version_name}",
-              "--gameDir",
-              "${game_directory}",
-              "--assetsDir",
-              "${assets_root}",
-              "--assetIndex",
-              "${assets_index_name}",
-              "--uuid",
-              "${auth_uuid}",
-              "--accessToken",
-              "${auth_access_token}",
-              "--userType",
-              "${user_type}",
-              "--versionType",
-              "${version_type}"
-            ]
-          }
-        },
-        {
-          "id": ".DS_Store",
-          "name": ".DS_Store",
+          "id": "fml.toml",
+          "name": "fml.toml",
           "type": "File",
           "artifact": {
-            "size": 6148,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/.DS_Store",
-            "MD5": "194577a7e20bdcc7afbb718f502c134c",
-            "path": ".DS_Store"
+            "size": 1299,
+            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-1.20.4/files/config/fml.toml",
+            "MD5": "b3f73a1dc605a8343745a1187737424d",
+            "path": "config/fml.toml"
           }
         },
         {
-          "id": "net.fabricmc.fabric-api:fabric-api:0.96.11+1.20.4",
-          "name": "Fabric API",
-          "type": "FabricMod",
-          "required": true,
-          "artifact": {
-            "size": 1736747,
-            "MD5": "348c85a66b6373b6d5e04ed7001bccd7",
-            "url": "https://maven.fabricmc.net/net/fabricmc/fabric-api/fabric-api/0.96.11+1.20.4/fabric-api-0.96.11+1.20.4.jar"
-          }
-        },
-        {
-          "id": "indigo-renderer.properties",
-          "name": "indigo-renderer.properties",
+          "id": "forge-client.toml",
+          "name": "forge-client.toml",
           "type": "File",
           "artifact": {
-            "size": 290,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/config/fabric/indigo-renderer.properties",
-            "MD5": "aa1cca86894cbb49b2b7de7c7e9e55e6",
-            "path": "config/fabric/indigo-renderer.properties"
+            "size": 1600,
+            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-1.20.4/files/config/forge-client.toml",
+            "MD5": "dbf4f7281b3743db0b5f304758c9bd9d",
+            "path": "config/forge-client.toml"
           }
         },
         {
-          "id": "iris.properties",
-          "name": "iris.properties",
+          "id": "OptiFine_1.20.4_HD_U_I7.jar",
+          "name": "OptiFine_1.20.4_HD_U_I7.jar",
           "type": "File",
           "artifact": {
-            "size": 286,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/config/iris.properties",
-            "MD5": "4ba0dee148a019c3e9bd3f66e050d0b8",
-            "path": "config/iris.properties"
-          }
-        },
-        {
-          "id": "journeymap-server.json",
-          "name": "journeymap-server.json",
-          "type": "File",
-          "artifact": {
-            "size": 67,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/config/journeymap-server.json",
-            "MD5": "1de3b1bd220fc2e0696e0946001baa66",
-            "path": "config/journeymap-server.json"
-          }
-        },
-        {
-          "id": "koreanpatch.json",
-          "name": "koreanpatch.json",
-          "type": "File",
-          "artifact": {
-            "size": 629,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/config/koreanpatch.json",
-            "MD5": "ad4a1065cd1aacc0ea655fc5497e0e12",
-            "path": "config/koreanpatch.json"
-          }
-        },
-        {
-          "id": "sodium-fingerprint.json",
-          "name": "sodium-fingerprint.json",
-          "type": "File",
-          "artifact": {
-            "size": 427,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/config/sodium-fingerprint.json",
-            "MD5": "50bf8413a414c32b08de1a4d625d1ac1",
-            "path": "config/sodium-fingerprint.json"
-          }
-        },
-        {
-          "id": "sodium-mixins.properties",
-          "name": "sodium-mixins.properties",
-          "type": "File",
-          "artifact": {
-            "size": 265,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/config/sodium-mixins.properties",
-            "MD5": "456d99888369486f42d6ea7f70294170",
-            "path": "config/sodium-mixins.properties"
-          }
-        },
-        {
-          "id": "sodium-options.json",
-          "name": "sodium-options.json",
-          "type": "File",
-          "artifact": {
-            "size": 632,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/config/sodium-options.json",
-            "MD5": "0526655acb6938560728d66ecb98fc90",
-            "path": "config/sodium-options.json"
-          }
-        },
-        {
-          "id": "translations.properties",
-          "name": "translations.properties",
-          "type": "File",
-          "artifact": {
-            "size": 1133,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/config/voicechat/translations.properties",
-            "MD5": "3847ec6998814d22e66360d37201fcc9",
-            "path": "config/voicechat/translations.properties"
-          }
-        },
-        {
-          "id": "username-cache.json",
-          "name": "username-cache.json",
-          "type": "File",
-          "artifact": {
-            "size": 48,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/config/voicechat/username-cache.json",
-            "MD5": "1b652dcaef004e254ed3a029a6fdccbe",
-            "path": "config/voicechat/username-cache.json"
-          }
-        },
-        {
-          "id": "voicechat-client.properties",
-          "name": "voicechat-client.properties",
-          "type": "File",
-          "artifact": {
-            "size": 3812,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/config/voicechat/voicechat-client.properties",
-            "MD5": "f42bbf63db515b44072f817bc390717b",
-            "path": "config/voicechat/voicechat-client.properties"
-          }
-        },
-        {
-          "id": "voicechat-server.properties",
-          "name": "voicechat-server.properties",
-          "type": "File",
-          "artifact": {
-            "size": 1861,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/config/voicechat/voicechat-server.properties",
-            "MD5": "9e02b1991fd629ef1bb5188531ab3fd6",
-            "path": "config/voicechat/voicechat-server.properties"
-          }
-        },
-        {
-          "id": "voicechat-volumes.properties",
-          "name": "voicechat-volumes.properties",
-          "type": "File",
-          "artifact": {
-            "size": 37,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/config/voicechat/voicechat-volumes.properties",
-            "MD5": "fcb38654c898989fdf9b82707c3ee2f5",
-            "path": "config/voicechat/voicechat-volumes.properties"
-          }
-        },
-        {
-          "id": "xaerominimap-common.txt",
-          "name": "xaerominimap-common.txt",
-          "type": "File",
-          "artifact": {
-            "size": 145,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/config/xaerominimap-common.txt",
-            "MD5": "c4bb2d96ebd8182b307ef6b2fda27370",
-            "path": "config/xaerominimap-common.txt"
-          }
-        },
-        {
-          "id": "xaerominimap.txt",
-          "name": "xaerominimap.txt",
-          "type": "File",
-          "artifact": {
-            "size": 3639,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/config/xaerominimap.txt",
-            "MD5": "2600fb51eb56b52f095be0e1837e0069",
-            "path": "config/xaerominimap.txt"
-          }
-        },
-        {
-          "id": "xaerominimap_entities.json",
-          "name": "xaerominimap_entities.json",
-          "type": "File",
-          "artifact": {
-            "size": 5531,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/config/xaerominimap_entities.json",
-            "MD5": "e1aaf4f12067cc0b3dd9b1404a9abeef",
-            "path": "config/xaerominimap_entities.json"
-          }
-        },
-        {
-          "id": "xaeropatreon.txt",
-          "name": "xaeropatreon.txt",
-          "type": "File",
-          "artifact": {
-            "size": 0,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/config/xaeropatreon.txt",
-            "MD5": "d41d8cd98f00b204e9800998ecf8427e",
-            "path": "config/xaeropatreon.txt"
-          }
-        },
-        {
-          "id": "fabricDefaultResourcePacks.dat",
-          "name": "fabricDefaultResourcePacks.dat",
-          "type": "File",
-          "artifact": {
-            "size": 571,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/data/fabricDefaultResourcePacks.dat",
-            "MD5": "43f7e3db6224bbb065b171d3c2ea50c6",
-            "path": "data/fabricDefaultResourcePacks.dat"
-          }
-        },
-        {
-          "id": "log.json",
-          "name": "log.json",
-          "type": "File",
-          "artifact": {
-            "size": 0,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/downloads/log.json",
-            "MD5": "d41d8cd98f00b204e9800998ecf8427e",
-            "path": "downloads/log.json"
-          }
-        },
-        {
-          "id": "2025-04-03-1.log.gz",
-          "name": "2025-04-03-1.log.gz",
-          "type": "File",
-          "artifact": {
-            "size": 2999,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/logs/2025-04-03-1.log.gz",
-            "MD5": "27808402774f34c8d806cee161f8e0a6",
-            "path": "logs/2025-04-03-1.log.gz"
-          }
-        },
-        {
-          "id": "2025-04-03-2.log.gz",
-          "name": "2025-04-03-2.log.gz",
-          "type": "File",
-          "artifact": {
-            "size": 8681,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/logs/2025-04-03-2.log.gz",
-            "MD5": "5f52a88fcbc8c8a10e4d6912f16828fc",
-            "path": "logs/2025-04-03-2.log.gz"
-          }
-        },
-        {
-          "id": "2025-04-03-3.log.gz",
-          "name": "2025-04-03-3.log.gz",
-          "type": "File",
-          "artifact": {
-            "size": 5839,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/logs/2025-04-03-3.log.gz",
-            "MD5": "bd6a4d4a6d224f899ed6ba4efe292a2c",
-            "path": "logs/2025-04-03-3.log.gz"
-          }
-        },
-        {
-          "id": "2025-04-03-4.log.gz",
-          "name": "2025-04-03-4.log.gz",
-          "type": "File",
-          "artifact": {
-            "size": 6662,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/logs/2025-04-03-4.log.gz",
-            "MD5": "44114268e5c26bc3d182be3fb806c9ac",
-            "path": "logs/2025-04-03-4.log.gz"
-          }
-        },
-        {
-          "id": "2025-04-03-5.log.gz",
-          "name": "2025-04-03-5.log.gz",
-          "type": "File",
-          "artifact": {
-            "size": 6066,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/logs/2025-04-03-5.log.gz",
-            "MD5": "2a3eed35a67aa92067d88278b7843081",
-            "path": "logs/2025-04-03-5.log.gz"
-          }
-        },
-        {
-          "id": "2025-04-03-6.log.gz",
-          "name": "2025-04-03-6.log.gz",
-          "type": "File",
-          "artifact": {
-            "size": 6136,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/logs/2025-04-03-6.log.gz",
-            "MD5": "e4db1e30fc2fa25205c6b162f5349da9",
-            "path": "logs/2025-04-03-6.log.gz"
-          }
-        },
-        {
-          "id": "latest.log",
-          "name": "latest.log",
-          "type": "File",
-          "artifact": {
-            "size": 32719,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/logs/latest.log",
-            "MD5": "34f7e01c6f95e289e2234eda7d7cb672",
-            "path": "logs/latest.log"
-          }
-        },
-        {
-          "id": "20250403-1.json.gz",
-          "name": "20250403-1.json.gz",
-          "type": "File",
-          "artifact": {
-            "size": 419,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/logs/telemetry/20250403-1.json.gz",
-            "MD5": "6fc27f0766d8a824dcf4b68cefb8ee93",
-            "path": "logs/telemetry/20250403-1.json.gz"
-          }
-        },
-        {
-          "id": "20250403-2.json.gz",
-          "name": "20250403-2.json.gz",
-          "type": "File",
-          "artifact": {
-            "size": 421,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/logs/telemetry/20250403-2.json.gz",
-            "MD5": "76dc0db6995aa5868dd2c6e9623f44b9",
-            "path": "logs/telemetry/20250403-2.json.gz"
-          }
-        },
-        {
-          "id": "20250403-3.json.gz",
-          "name": "20250403-3.json.gz",
-          "type": "File",
-          "artifact": {
-            "size": 422,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/logs/telemetry/20250403-3.json.gz",
-            "MD5": "e3bceede63f4f48f0d12744111406a29",
-            "path": "logs/telemetry/20250403-3.json.gz"
-          }
-        },
-        {
-          "id": "20250403-4.json.gz",
-          "name": "20250403-4.json.gz",
-          "type": "File",
-          "artifact": {
-            "size": 422,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/logs/telemetry/20250403-4.json.gz",
-            "MD5": "3302f163befbcaee07fd9732fdec7c3e",
-            "path": "logs/telemetry/20250403-4.json.gz"
-          }
-        },
-        {
-          "id": "20250403-5.json.gz",
-          "name": "20250403-5.json.gz",
-          "type": "File",
-          "artifact": {
-            "size": 423,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/logs/telemetry/20250403-5.json.gz",
-            "MD5": "60d7abeb4c72d4e63dd5c95a392318a6",
-            "path": "logs/telemetry/20250403-5.json.gz"
-          }
-        },
-        {
-          "id": "20250403-6.json.gz",
-          "name": "20250403-6.json.gz",
-          "type": "File",
-          "artifact": {
-            "size": 493,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/logs/telemetry/20250403-6.json.gz",
-            "MD5": "63baced3cac59cb85899e93a050afc7f",
-            "path": "logs/telemetry/20250403-6.json.gz"
-          }
-        },
-        {
-          "id": "20250403-7.json.gz",
-          "name": "20250403-7.json.gz",
-          "type": "File",
-          "artifact": {
-            "size": 417,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/logs/telemetry/20250403-7.json.gz",
-            "MD5": "40370f3e22a57b064ee4c124d5f7128a",
-            "path": "logs/telemetry/20250403-7.json.gz"
-          }
-        },
-        {
-          "id": "20250404-1.json",
-          "name": "20250404-1.json",
-          "type": "File",
-          "artifact": {
-            "size": 1062,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/logs/telemetry/20250404-1.json",
-            "MD5": "0089c0f55a4c91d1b89201ecdf87c8b1",
-            "path": "logs/telemetry/20250404-1.json"
+            "size": 7232045,
+            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-1.20.4/files/mods/OptiFine_1.20.4_HD_U_I7.jar",
+            "MD5": "35bb67f2fa6e6e0bcbff13c23724deee",
+            "path": "mods/OptiFine_1.20.4_HD_U_I7.jar"
           }
         },
         {
@@ -545,32 +536,10 @@
           "name": "options.txt",
           "type": "File",
           "artifact": {
-            "size": 5087,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/options.txt",
-            "MD5": "a5fa1f5345cb490c5cff988f53d78506",
+            "size": 3400,
+            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-1.20.4/files/options.txt",
+            "MD5": "7656775783e3f05d9cf2c900a2125367",
             "path": "options.txt"
-          }
-        },
-        {
-          "id": "ComplementaryReimagined_r5.4.zip.txt",
-          "name": "ComplementaryReimagined_r5.4.zip.txt",
-          "type": "File",
-          "artifact": {
-            "size": 53,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/shaderpacks/ComplementaryReimagined_r5.4.zip.txt",
-            "MD5": "ae5635a5b7461cfbc839bfb973e9ba72",
-            "path": "shaderpacks/ComplementaryReimagined_r5.4.zip.txt"
-          }
-        },
-        {
-          "id": "usercache.json",
-          "name": "usercache.json",
-          "type": "File",
-          "artifact": {
-            "size": 104,
-            "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/usercache.json",
-            "MD5": "209ef8bc573eb6c0ab070487f55df9e9",
-            "path": "usercache.json"
           }
         }
       ]

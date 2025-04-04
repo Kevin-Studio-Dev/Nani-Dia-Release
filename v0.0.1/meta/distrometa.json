@@ -1,18 +1,11 @@
 {
-  "$schema": "file:///Users/hellosunghyun/Documents/Github/Nani-Dia/Release/v0.0.1/schemas/ServerMetaSchema.schema.json",
+  "$schema": "file:///Users/hellosunghyun/Documents/Github/Nani-Dia/Release/v0.0.1/schemas/DistroMetaSchema.schema.json",
   "meta": {
-    "version": "1.0.0",
-    "name": "nani-dia (Minecraft 1.20.4)",
-    "description": "nani-dia Running Minecraft 1.20.4",
-    "icon": "How to set the server icon: https://github.com/Kevin-Studio-Dev/Nani-Dia-Nebula#setting-the-server-icon",
-    "address": "mc.hypixel.net:25565",
+    "rss": "<LINK TO RSS FEED>",
     "discord": {
-      "shortId": "<FILL IN OR REMOVE DISCORD OBJECT>",
-      "largeImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
-      "largeImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
-    },
-    "mainServer": true,
-    "autoconnect": false
-  },
-  "untrackedFiles": []
+      "clientId": "<FILL IN OR REMOVE DISCORD OBJECT>",
+      "smallImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
+      "smallImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
+    }
+  }
 }
