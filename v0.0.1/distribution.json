@@ -43,6 +43,56 @@
                 "MD5": "02c58f7573b74033c13a1d4d2f6af919",
                 "url": "https://maven.fabricmc.net/net/fabricmc/fabric-loader/0.15.6/fabric-loader-0.15.6.json"
               }
+            },
+            {
+              "id": "org.ow2.asm:asm:9.5",
+              "name": "ASM Core",
+              "type": "Library",
+              "artifact": {
+                "size": 121863,
+                "MD5": "afb0c20a87456cbc9c6345fc7d073a47",
+                "url": "https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.5/asm-9.5.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-commons:9.5",
+              "name": "ASM Commons",
+              "type": "Library",
+              "artifact": {
+                "size": 72194,
+                "MD5": "2bc1d3565741886f0ba4b769ee7fb5ef",
+                "url": "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.5/asm-commons-9.5.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-tree:9.5",
+              "name": "ASM Tree",
+              "type": "Library",
+              "artifact": {
+                "size": 52858,
+                "MD5": "84dc3612d7a7375a3a6b6a1c58ef9577",
+                "url": "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.5/asm-tree-9.5.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-util:9.5",
+              "name": "ASM Util",
+              "type": "Library",
+              "artifact": {
+                "size": 86286,
+                "MD5": "2c03a0a595a680ec63382c54d82a3307",
+                "url": "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-util/9.5/asm-util-9.5.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-analysis:9.5",
+              "name": "ASM Analysis",
+              "type": "Library",
+              "artifact": {
+                "size": 34521,
+                "MD5": "df4f4ce85914aa5c4b54de5d9e67a5b7",
+                "url": "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/9.5/asm-analysis-9.5.jar"
+              }
             }
           ],
           "arguments": {
@@ -71,6 +121,17 @@
             "url": "https://nani-dia-launcher.hellosunghyun.workers.dev/latest/servers/nani-dia-1.20.4/files/.DS_Store",
             "MD5": "194577a7e20bdcc7afbb718f502c134c",
             "path": ".DS_Store"
+          }
+        },
+        {
+          "id": "net.fabricmc.fabric-api:fabric-api:0.96.11+1.20.4",
+          "name": "Fabric API",
+          "type": "FabricMod",
+          "required": true,
+          "artifact": {
+            "size": 1736747,
+            "MD5": "348c85a66b6373b6d5e04ed7001bccd7",
+            "url": "https://maven.fabricmc.net/net/fabricmc/fabric-api/fabric-api/0.96.11+1.20.4/fabric-api-0.96.11+1.20.4.jar"
           }
         },
         {
